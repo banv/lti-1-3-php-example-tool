@@ -29,5 +29,28 @@
         "deployment": [
             "8c49a5fa-f955-405e-865f-3d7e959e809f"
         ]
+    },
+    "http://10.3.0.88:8080": {
+        "client_id": "JhJdOHe0ZdcDTPr",
+        "auth_login_url": "http://10.3.0.88:8080/mod/lti/auth.php",
+        "auth_token_url": "http://10.3.0.88:8080/mod/lti/token.php",
+        "key_set_url": "http://10.3.0.88:8080/mod/lti/certs.php",
+        "private_key_file": "/private.key",
+        "kid": "52072138760c9fe1124f",
+        "deployment": [
+            "1"
+        ]
+    },
+
+    "https://canvas.instructure.com": {
+        "client_id": "10000000000001",
+        "auth_login_url": "http://canvas.docker/api/lti/authorize_redirect",
+        "auth_token_url": "http://canvas.docker/login/oauth2/token",
+        "key_set_url": "http://canvas.docker/api/lti/security/jwks",
+        "private_key_file": "/private.key",
+        "kid": "2018-06-18T22:33:20Z",
+        "deployment": [
+            "2:b82229c6e10bcb87beb1f1b287faee560ddc3109"
+        ]
     }
 }

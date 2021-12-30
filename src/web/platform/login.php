@@ -3,6 +3,9 @@
 require_once __DIR__ . '/../../vendor/autoload.php';
 require_once __DIR__ . '/../../db/example_database.php';
 
+require_once __DIR__ . '/../log.php';
+
+
 use \Firebase\JWT\JWT;
 $message_jwt = [
     "iss" => 'http://localhost:9001',
@@ -41,7 +44,11 @@ $jwt = JWT::encode(
     'RS256',
     'fcec4f14-28a5-4697-87c3-e9ac361dada5'
 );
+
+lti_log("jwt key", $jwt);
+
 ?>
+
 
 <form id="auto_submit" action="<?= $_REQUEST['redirect_uri']; ?>" method="POST">
     <input type="hidden" name="id_token" value="<?= $jwt ?>" />

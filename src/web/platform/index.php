@@ -5,7 +5,7 @@ require_once __DIR__ . '/../../db/example_database.php';
     <li>Fancy LMS</li>
     <li>Users</li>
     <li>Courses</li>
-        <li class="sub" onclick="document.getElementById('frame').src='<?php echo TOOL_HOST; ?>/login.php?iss=http%3A%2F%2Flocalhost:9001&login_hint=12345&target_link_uri=http%3A%2F%2Flocalhost%2Fgame.php&lti_message_hint=12345'">Games 101</li>
+        <li class="sub" onclick="document.getElementById('frame').src='http://10.3.0.88/enrol/lti/proxy.php/1/cd77918a7343bfcafff302dd8cab7453/'">Games 101</li>
     <li>Settings</li>
 </ul>
 <iframe id="frame" style="width:1200px; height:600px" >
